@@ -1,0 +1,9 @@
+<script>
+    function updateTime() {
+        const currentTime = new Date();
+        const timeString = currentTime.toLocaleTimeString();
+        document.getElementById('current-time').textContent = timeString;
+    }
+
+    setInterval(updateTime, 1000); // Update the time every second
+</script>
