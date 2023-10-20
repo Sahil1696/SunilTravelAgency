@@ -1,0 +1,157 @@
+.navbar-brand img {
+    height: 50px; /* Adjust the height of the logo as needed */
+    width: auto; /* Maintain the aspect ratio */
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    line-height: 2; /* Adjust the line height as needed */
+    margin-right: 25px; 
+    font-size: 18px;
+    
+}
+.social-icons ul{
+    list-style: none; /* Remove default list bullets */
+    display: flex; /* Use a flex container to arrange items horizontally */
+    padding: 0; /* Remove default padding */
+    margin-bottom: -5px;
+    margin-right: 15px;
+    
+}
+.social-icons li{
+    margin-right: -30px; /* Adjust the margin to control spacing between items */
+}
+/* Add the following CSS rules to your existing styles */
+
+.clock-icon {
+    margin-right: 5px; /* Adjust margin as needed */
+    padding-right: 5px; /* Adjust padding as needed */
+}
+.clock-time {
+    font-size: 18px; /* Adjust the size as needed */
+}
+
+.fixed-header {
+    position: relative;
+}
+.fixed-header.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;/* Adjust the z-index as needed */
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100% /* Set the desired height */
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.image-container {
+    margin: 10px; /* Adjust the margin as needed to control spacing between image rows */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col-md-4 {
+    flex: 1;
+    padding: 10px; /* Add spacing between images */
+}
+
+.image-with-text {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-with-text img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* Maintain the aspect ratio and cover the container */
+    transition: transform 0.3s; /* Add a smooth transition for the zoom effect */
+}
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust the background color and opacity as needed */
+    color: #fff; /* Text color */
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.text-overlay h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.text-overlay p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.image-container .image-with-text:hover img {
+    transform: scale(1.05); /* Add zoom effect only on the hovered image */
+}
+
+.image-container:hover .text-overlay {
+    opacity: 1;
+}
+.about-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-content {
+    flex: 2;
+    padding: 20px;
+}
+
+.about-tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tab-content .tab-pane {
+    display: none;
+}
+
+.tab-content .tab-pane.active {
+    display: block;
+}
+
