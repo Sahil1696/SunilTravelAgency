@@ -119,39 +119,297 @@
 }
 
 .about-image {
-    flex: 1;
+    flex: 2; /* Adjust the flex value to change the width of the image */
 }
 
 .about-image img {
     max-width: 100%;
     height: auto;
     display: block;
+    width: 100%;
 }
 
 .about-content {
-    flex: 2;
+    flex: 3; /* Adjust the flex value to change the width of the content */
     padding: 20px;
 }
 
-.about-tabs {
+.link-container {
+    text-align: center; /* Center the links horizontally */
+}
+
+.closely-placed-link {
+    display: inline-block; /* Make links inline so they are closely placed */
+    margin: 0 10px; /* Adjust the margin to control the spacing between links */
+    text-decoration: none; /* Remove the default underline on links */
+    color: #007BFF; /* Set the link color */
+}
+.about-description {
+    text-align: center; /* Center-align text within the div */
+    margin-top: -150px;
+}
+
+.about-description h2 {
+    font-size: 30px; /* Adjust the font size to your desired value */
+}
+
+.about-description h2 {
+    font-size: 35px; 
+    margin-bottom: 20px;
+    /* Adjust the font size to your desired value */
+}
+.link-container a {
+    font-size: 22px; /* Adjust the font size to your desired value */
+}
+.description {
+    max-width: 600px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; 
+    display: none;
+    background-color: #f1f1f1;
+    transition: opacity 0.5s ease;
+}
+
+/* Style to show descriptions */
+.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+.description.show {
+    transform: translateY(0);
+}
+.description-box {
+    border: 1px solid #ddd; /* Add a border to the description box */
+    margin: 10px; /* Add some margin to separate the boxes */
+    padding: 20px;
+    display: none;
+    background-color: #f1f1f1;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.3s;
+}
+/* Style for the "Our Services" section */
+.our-service {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style for each service box */
+.service-box {
+    border: 2px solid #007BFF; /* Add a border with the desired color */
+    border-radius: 10px; /* Rounded corners for the box */
+    padding: 20px;
+    margin: 10px;
+    background-color: #f1f1f1; /* Background color for the box */
+    text-align: center;
+    transition: transform 0.3s; /* Add a smooth transition effect */
+}
+
+/* Style for service box icons (adjust the icon size and color) */
+.service-box i {
+    font-size: 24px;
+    color: #007BFF;
+    margin-bottom: 10px; /* Spacing between icon and title */
+}
+
+/* Style for service box headings */
+.service-box h3 {
+    font-size: 20px;
+    margin: 10px 0; /* Spacing above and below the heading */
+}
+
+/* Style for service box descriptions */
+.service-box p {
+    font-size: 16px;
+    margin: 0; /* Remove margin for description text */
+}
+
+/* Add a hover effect to the service boxes */
+.service-box:hover {
+    transform: scale(1.05); /* Zoom in on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}
+/* Style for the "Places to Visit this time" section */
+.places-to-visit-section {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style for the Swiper container */
+.swiper-container {
+    width: 100%;
+    height: 100%; /* Set the desired height */
+}
+
+/* Style for each Swiper slide */
+.swiper-slide {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    padding: 20px;
+}
+
+/* Style for the image part of each slide (60%) */
+.image-slide {
+    flex: 0.6; /* 60% width */
+}
+
+.image-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Style for the text part of each slide (40%) */
+.text-slide {
+    flex: 0.4; /* 40% width */
+    text-align: left;
+    padding: 20px;
+}
+
+.text-slide h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.text-slide p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+/* Style for the "Vehicle" section */
+.vehicle-section {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style for the Swiper container */
+.swiper-container {
+    width: 100%;
+    height: 100%; /* Set the desired height */
+}
+
+/* Style for each Swiper slide */
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for the image part of each slide */
+.image-slide {
+    position: relative;
+    text-align: center;
+}
+
+.image-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Style for the text overlay on each image */
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.text-overlay h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.text-overlay p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Style to show the text overlay on hover */
+.image-slide:hover .text-overlay {
+    opacity: 1;
+}
+/* Style for the people section */
+.people-section {
+    text-align: center; /* Center-align the content */
+    padding: 40px 0;
+    background-color: #f8f8f8; /* Set a background color */
+}
+
+.people-section h2 {
+    font-size: 30px; /* Adjust the font size as needed */
     margin-bottom: 20px;
 }
 
-.tab {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
-    cursor: pointer;
+.people-boxes {
+    display: flex;
+    justify-content: center; /* Center-align the boxes horizontally */
+    max-width: 1000px; /* Adjust the max width as needed */
+    margin: 0 auto; /* Center the boxes horizontally */
+}
+
+.people-box {
+    flex: 1; /* Adjust the flex value to control box width */
+    padding: 20px;
+    background-color: #fff; /* Box background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a box shadow */
+    margin: 10px; /* Adjust margin between boxes */
+    text-align: center; /* Center-align box content */
+}
+
+.people-box img {
+    max-width: 100%; /* Ensure images fit within the boxes */
+    border-radius: 50%; /* Make the image round */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle image shadow */
+}
+
+.people-box h3 {
+    font-size: 20px; /* Adjust the font size for the name */
+    margin: 10px 0;
+}
+
+.people-box p {
+    font-size: 16px; /* Adjust the font size for the designation */
+    color: #777; /* Set a text color for the designation */
+}
+/* Testimonials Section */
+.testimonials-section {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.testimonial-box {
+    width: 30%;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
     border-radius: 5px;
 }
 
-.tab-content .tab-pane {
-    display: none;
+.testimonial-box img {
+    max-width: 100px;
+    border-radius: 50%;
 }
 
-.tab-content .tab-pane.active {
-    display: block;
+.testimonial-author {
+    font-style: italic;
 }
 

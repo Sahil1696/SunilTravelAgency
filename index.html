@@ -154,27 +154,150 @@
 </div>
 <div class="about-section" id="about-us-section">
     <div class="about-image">
-        <img src="Images/Slider/" alt="About Us Image">
+        <img src="Images/Slider/car1.avif" alt="About Us Image">
     </div>
     <div class="about-content">
-        <div class="about-tabs">
-            <div class="tab">About Us</div>
-            <div class="tab">Why Choose Us</div>
-            <div class="tab">Our Mission</div>
+        <div class="about-description">
+            <h2>Discover New Places With Us!</h2>
         </div>
-        <div class="tab-content">
-            <div class="tab-pane">
-                <!-- Content for the "About Us" tab -->
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <div class="link-container">
+            <a href="#" class="closely-placed-link" onclick="toggleDescription(1,event)">About Us</a>
+            <a href="#" class="closely-placed-link" onclick="toggleDescription(2,event)">Why Choose Us?</a>
+            <a href="#" class="closely-placed-link" onclick="toggleDescription(3,event)">Our Mission</a>
+        </div>   
+        <div class="descriptions">
+            <div id="description1" class="description-box hidden">
+                <div class="description">Go Agency is committed to bringing our clients the best in value and quality travel arrangements. We are passionate about travel and sharing the world's wonders with you..</div></div>
+            <div id="description2" class="description-box hidden">
+                <div class="description">We are proud to offer excellent quality and value for money in our tours, which give you the chance to experience your chosen destination in an authentic and exciting way.</div></div>
+            <div id="description3" class="description-box hidden">
+                <div class="description">Our mission is to provide the ultimate travel planning experience while becoming a one-stop shop for every travel service available in the industry.</div></div>
+        </div>
+    </div>
+</div>
+<div class="our-service">
+    <h1 class="text-center">Our Services</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="service-box">
+                <i class="fas fa-icon-1"></i>
+                <h2>Wide Variety of Tours</h2>
+                <p>We offer a wide variety of personally picked tours with destinations all over the globe.</p>
             </div>
-            <div class="tab-pane">
-                <!-- Content for the "Why Choose Us" tab -->
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+        <div class="col-md-4">
+            <div class="service-box">
+                <i class="fas fa-icon-2"></i>
+                <h2>Highly Qualified Service</h2>
+                <p>Our tour managers are qualified, skilled, and friendly to bring you the best service.</p>
             </div>
-            <div class="tab-pane">
-                <!-- Content for the "Our Mission" tab -->
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+        <div class="col-md-4">
+            <div class="service-box">
+                <i class="fas fa-icon-3"></i>
+                <h2>Handpicked Hotels</h2>
+                <p>Our team offers only the best selection of affordable and luxury hotels to our clients.</p>
             </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="service-box">
+                <i class="fas fa-icon-4"></i>
+                <h2>Best Price Guarantee</h2>
+                <p>If you find tours that are cheaper than ours, we will compensate the difference</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="service-box">
+                <i class="fas fa-icon-5"></i>
+                <h2>24/7 Support</h2>
+                <p>You can always get professional support from our staff 24/7 and ask any question you have.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="service-box">
+                <i class="fas fa-icon-6"></i>
+                <h2>Personalized Matching</h2>
+                <p>Our unique matching system lets you find just the tour you want for your next holiday.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="vehicle-section">
+    <h2>Vehicle</h2>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="image-slide">
+                    <img src="Images/Slider/car1.avif" alt="Vehicle 1 Image">
+                    <div class="text-overlay">
+                        <h3>Vehicle 1</h3>
+                        <p>Description of Vehicle 1 goes here.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="image-slide">
+                    <img src="Images/Slider/car2.avif" alt="Vehicle 2 Image">
+                    <div class="text-overlay">
+                        <h3>Vehicle 2</h3>
+                        <p>Description of Vehicle 2 goes here.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
+        <!-- Add pagination or navigation controls here if desired -->
+    </div>
+</div>
+<div class="people-section">
+    <h2>Different People - One Mission</h2>
+    <div class="people-boxes">
+        <div class="people-box">
+            <img src="Images/Persons/person1.jpg" alt="Owner 1">
+            <h3>John Doe</h3>
+            <p>Founder</p>
+            <p>+1 123-456-7890</p>
+        </div>
+        <div class="people-box">
+            <img src="Images/Persons/person1.jpg" alt="Owner 2">
+            <h3>Jane Smith</h3>
+            <p>Co-Founder</p>
+            <p>+1 123-456-7890</p>
+        </div>
+        <div class="people-box">
+            <img src="Images/Persons/person1.jpg" alt="Owner 3">
+            <h3>Robert Johnson</h3>
+            <p>CEO</p>
+            <p>+1 123-456-7890</p>
+        </div>
+        <div class="people-box">
+            <img src="Images/Persons/person1.jpg" alt="Owner 4">
+            <h3>Susan Wilson</h3>
+            <p>COO</p>
+            <p>+1 123-456-7890</p>
+        </div>
+    </div>
+</div>
+
+<div class="testimonials-section">
+    <h2>What People Say</h2>
+    <div class="testimonials-container">
+        <div class="testimonial-box">
+            <img src="Images/Persons/person1.jpg" alt="Person 1">
+            <p>"I had an amazing experience with this travel agency. They made my trip memorable!"</p>
+            <p class="testimonial-author">- John Doe</p>
+        </div>
+        <div class="testimonial-box">
+            <img src="Images/Persons/person1.jpg" alt="Person 2">
+            <p>"The services provided by this agency are outstanding. Highly recommended!"</p>
+            <p class="testimonial-author">- Jane Smith</p>
+        </div>
+        <div class="testimonial-box">
+            <img src="Images/Persons/person1.jpg" alt="Person 3">
+            <p>"I couldn't have asked for a better travel experience. This agency knows their stuff!"</p>
+            <p class="testimonial-author">- Michael Johnson</p>
         </div>
     </div>
 </div>
@@ -212,9 +335,10 @@
                 prevEl: ".swiper-button-prev" // Previous slide button
             },
             autoplay: {
-            delay: 2000, // Set the delay between transitions in milliseconds (5 seconds in this example)
+            delay: 3000, // Set the delay between transitions in milliseconds (5 seconds in this example)
             disableOnInteraction: false, // Autoplay continues even when the user interacts with the slider
-        }
+        },
+        effect: 'fade'
         });
     </script>
     <script>
@@ -229,7 +353,27 @@
         }
     });
 </script>
-    
+
+
+<script>
+  function toggleDescription(descriptionNumber, event) {
+    event.preventDefault(); // Prevent the default behavior of anchor tags
+
+    var descriptions = document.querySelectorAll('.description-box');
+
+    descriptions.forEach(function (desc) {
+        desc.classList.add('hidden');
+    });
+
+    var descriptionId = 'description' + descriptionNumber;
+    var description = document.getElementById(descriptionId);
+
+    if (description) {
+        description.classList.remove('hidden');
+    }
+}
+
+</script>
     <!-- Rest of your content goes here -->
 </body>
 </html>
