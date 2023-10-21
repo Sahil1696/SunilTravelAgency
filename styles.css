@@ -302,7 +302,7 @@
 }
 
 .image-slide img {
-    width: 100%;
+   
     height: auto;
     object-fit: cover;
 }
@@ -412,4 +412,69 @@
 .testimonial-author {
     font-style: italic;
 }
+.experience-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
+.experience-images {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.experience-image {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    justify-content: space-around;
+    margin: 0px;
+}
+
+.experience-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-box {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+.contact-quick-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+.contact-section {
+    margin-left: 30px; /* Add margin to push it slightly to the right */
+}
+.quick-links-section {
+    text-align: left; /* Align "Quick Links" section to the left */
+}
+
+
+
+.contact-details > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-details i {
+    margin-right: 5px;
+}
