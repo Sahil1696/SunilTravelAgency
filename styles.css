@@ -352,6 +352,7 @@
 
 .people-boxes {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center; /* Center-align the boxes horizontally */
     max-width: 1000px; /* Adjust the max width as needed */
     margin: 0 auto; /* Center the boxes horizontally */
@@ -364,6 +365,8 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a box shadow */
     margin: 10px; /* Adjust margin between boxes */
     text-align: center; /* Center-align box content */
+    min-width: 250px; /* Set a minimum width to prevent boxes from becoming too narrow */
+    max-width: 300px; /* Limit the maximum width of each box */
 }
 
 .people-box img {
@@ -381,6 +384,12 @@
     font-size: 16px; /* Adjust the font size for the designation */
     color: #777; /* Set a text color for the designation */
 }
+/* Media query for small screens (e.g., smartphones) */
+@media screen and (max-width: 600px) {
+    .people-box {
+        flex: 1; /* Full width for small screens */
+    }
+}
 /* Testimonials Section */
 .testimonials-section {
     text-align: center;
@@ -389,12 +398,13 @@
 
 .testimonials-container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .testimonial-box {
+    flex:1;
     width: 30%;
     text-align: center;
     margin: 20px;
@@ -402,6 +412,7 @@
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 5px;
+    max-width: 300px;
 }
 
 .testimonial-box img {
@@ -411,6 +422,12 @@
 
 .testimonial-author {
     font-style: italic;
+}
+/* Media query for small screens (e.g., smartphones) */
+@media screen and (max-width: 600px) {
+    .testimonial-box {
+        flex: 1; /* Full width for small screens */
+    }
 }
 .experience-section {
     text-align: center;
@@ -422,15 +439,16 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .experience-image {
     position: relative;
+    flex: 1; 
     width: 300px;
     height: 300px;
     overflow: hidden;
-    justify-content: space-around;
-    margin: 0px;
+    margin: 10px;
 }
 
 .experience-image img {
@@ -454,20 +472,27 @@
     color: white;
     font-size: 20px;
 }
-.contact-quick-section {
+/* Media query for small screens (e.g., smartphones) */
+@media screen and (max-width: 600px) {
+    .experience-image {
+        flex: 1; /* Full width for small screens */
+    }
+}.contact-quick-section {
     display: flex;
+    flex-wrap: wrap; /* Allow elements to wrap on small screens */
     justify-content: space-between;
     background-color: #f0f0f0;
     padding: 20px;
 }
+
 .contact-section {
-    margin-left: 30px; /* Add margin to push it slightly to the right */
+    flex: 1; /* Make the contact section flexible to adjust with different screen sizes */
+    margin-bottom: 20px; /* Add spacing between contact section and quick links section */
 }
+
 .quick-links-section {
     text-align: left; /* Align "Quick Links" section to the left */
 }
-
-
 
 .contact-details > div {
     display: flex;
@@ -478,3 +503,52 @@
 .contact-details i {
     margin-right: 5px;
 }
+
+/* Media query for small screens (e.g., smartphones) */
+@media screen and (max-width: 600px) {
+    .contact-quick-section {
+        flex-direction: column; /* Stack contact section and quick links section vertically on small screens */
+    }
+
+    .contact-section {
+        margin-bottom: 0; /* Remove margin between contact and quick links sections on small screens */
+    }
+
+    .quick-links-section {
+        text-align: center; /* Center-align "Quick Links" section on small screens */
+    }
+}
+
+.vehicle-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.vehicle {
+    flex: 0 0 auto;
+    text-align: center;
+    margin: 5px; /* Reduced margin between images */
+}
+
+.vehicle img {
+    width: 200px; /* Adjust the image width as needed */
+    height: 200px; /* Maintain the aspect ratio of the image */
+}
+
+.vehicle h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.vehicle p {
+    font-size: 14px;
+}
+
+/* Additional styling can be applied as needed */
